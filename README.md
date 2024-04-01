@@ -1,3 +1,7 @@
+## TIPE 2023
+### Thème : la ville
+# Compression de données et vidéosurveillance
+
 Le modèle de compression est inspiré du standard de compression JPEG : d’abord transformer l’image, qui est initialement représentée sous la forme RGB (rouge, vert, bleu) en luminance et chrominances. La première étape de la compression est avec pertes : les composantes sont ensuite converties dans le domaine « spectral » par transformée en cosinus discrète (une version adaptée de la transformée de Fourier discrète). Cette dernière permet de séparer les informations basses fréquences, très significatives à l’œil humain, et les basses fréquences, qui représentent les détails de l’image. Une étape de quantification permet ensuite d’assigner aux composantes les moins importantes la valeur 0 ou d’autres entiers faibles.
 
 Côté compression sans perte : elle exploite le concept fondamental d’entropie de Shannon. La redondance créée précédemment (beaucoup d’entiers faibles proches de 0) fait diminuer l’entropie des données de l’image. Cela indique qu’il est possible de représenter l’image autrement, de coder les informations de sorte qu’elles occupent moins de place. J’ai exploré différentes techniques : codage de Huffman, codage par plages (RLE), algorithme Move to Front, transformée de Burrows-Wheeler.
