@@ -9,4 +9,4 @@ Côté compression sans perte : elle exploite le concept fondamental d’entropi
 Afin de mieux saisir les concepts inhérents à la compression de données, un maximum de fonctions sont codées à la main, ce qui est beaucoup moins efficace qu’utiliser des bibliothèques comme scipy.
 
 
-Le code n’a jamais atteint un stade utilisable et est resté à l’état de juxtaposition de fonction utilisables mais sans interface claire. La transformée en cosinus discrète est bien mise en place, mais la compression sans perte n’a pas beaucoup avancé, et le peu de tests menés n’ont été que très peu concluants.
+Le code n’a jamais atteint un stade utilisable et est resté à l’état de juxtaposition de fonctions utilisables mais sans interface claire. La transformée en cosinus discrète est bien mise en place, mais la compression sans perte n’a pas beaucoup avancé, et le peu de tests menés n’ont été que très peu concluants.
